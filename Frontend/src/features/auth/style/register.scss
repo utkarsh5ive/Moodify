@@ -1,0 +1,109 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: var(--bg-color);
+
+  .form-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 3rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--panel-bg);
+    border: 1px solid var(--panel-border);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px var(--shadow-color);
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+      color: var(--text-primary);
+      text-align: center;
+    }
+
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 100%;
+
+      label {
+        font-size: 0.95rem;
+        font-weight: 500;
+        color: var(--text-secondary);
+        margin-left: 0.2rem;
+      }
+
+      input {
+        width: 100%;
+        padding: 1rem 1.2rem;
+        border-radius: 8px;
+        border: 1px solid #444444;
+        background-color: #2a2a2a;
+        color: var(--text-primary);
+        font-family: inherit;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+
+        &::placeholder {
+          color: #777777;
+        }
+
+        &:focus {
+          outline: none;
+          border-color: var(--primary-accent);
+          background-color: #333333;
+        }
+      }
+    }
+
+    .button {
+      width: 100%;
+      padding: 1.1rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      background-color: var(--primary-accent);
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 0.5rem;
+
+      &:hover {
+        background-color: var(--primary-accent-hover);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(98, 0, 234, 0.3);
+      }
+    }
+
+    p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      text-align: center;
+
+      a {
+        color: var(--primary-accent);
+        font-weight: 600;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: var(--primary-accent-hover);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

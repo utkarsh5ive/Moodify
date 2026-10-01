@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-color: #121212; /* Deep dark background */
+  --panel-bg: #1e1e1e; /* Slightly lighter dark for panels */
+  --panel-border: #333333; /* Solid visible border */
+  
+  --primary-accent: #6200ea; /* Solid vibrant purple */
+  --primary-accent-hover: #7c4dff;
+  
+  --text-primary: #ffffff;
+  --text-secondary: #aaaaaa;
+  
+  --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  color: var(--text-primary);
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Global Solid Panel Utility */
+.solid-panel {
+  background-color: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px var(--shadow-color);
+}
